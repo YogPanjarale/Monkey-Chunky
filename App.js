@@ -65,7 +65,7 @@ export default class App extends React.Component {
               <PhonicSoundButton
                 wordChunk={this.state.chunks[index]}
                 soundChunk={this.state.phonicSounds[index]}
-                buttonIndex={index}
+                buttonIndex={index}  key={item+this.state.text}
               />
             );
           })}
